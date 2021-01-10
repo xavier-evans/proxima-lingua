@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Popularity in the United States
+{% endblock %}
+
+{% block main %}
+<progress value="40" max="100" style="height:24px; width:20%"> 40% </progress>
+<pre>
+</pre>
+<form action="/popularus" method="post">
+    <div class="form-group">
+        Indicate the extent to which you agree or disagree with the following statements.
+    </div>
+    <pre>
+    </pre>
+    <div class="form-group" style="font-size:small; color:red">
+         Languages should be learned to be spoken, and I will feel overwhelmingly unfulfilled if I cannot use the language in daily life.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio5" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio5" value=2 /></label></td>
+                <td><label><input type="radio" name="radio5" value=4 /></label></td>
+                <td><label><input type="radio" name="radio5" value=6 /></label></td>
+                <td><label><input type="radio" name="radio5" value=8 /></label></td>
+                <td><label><input type="radio" name="radio5" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        I want to learn the language that will allow me to communicate with as many people as possible in the United States.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio1" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio1" value=2 /></label></td>
+                <td><label><input type="radio" name="radio1" value=4 /></label></td>
+                <td><label><input type="radio" name="radio1" value=6 /></label></td>
+                <td><label><input type="radio" name="radio1" value=8 /></label></td>
+                <td><label><input type="radio" name="radio1" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        I don't learn languages for practicality's sake but, rather, to satisfy my own linguistic curiosities, even if few people speak it.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio2" value=10 required /></label></td>
+                <td><label><input type="radio" name="radio2" value=8 /></label></td>
+                <td><label><input type="radio" name="radio2" value=6 /></label></td>
+                <td><label><input type="radio" name="radio2" value=4 /></label></td>
+                <td><label><input type="radio" name="radio2" value=2 /></label></td>
+                <td><label><input type="radio" name="radio2" value=0 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        I am motivated to learn a langauge like Spanish given its sheer number of speakers in the United States.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio3" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio3" value=2 /></label></td>
+                <td><label><input type="radio" name="radio3" value=4 /></label></td>
+                <td><label><input type="radio" name="radio3" value=6 /></label></td>
+                <td><label><input type="radio" name="radio3" value=8 /></label></td>
+                <td><label><input type="radio" name="radio3" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        I would not be discouraged by communicating with speakers of a language exclusively online if I cannot find any in person.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio4" value=10 required /></label></td>
+                <td><label><input type="radio" name="radio4" value=8 /></label></td>
+                <td><label><input type="radio" name="radio4" value=6 /></label></td>
+                <td><label><input type="radio" name="radio4" value=4 /></label></td>
+                <td><label><input type="radio" name="radio4" value=2 /></label></td>
+                <td><label><input type="radio" name="radio4" value=0 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <button class="btn btn-primary" type="submit">Next</button>
+</form>
+{% endblock %}

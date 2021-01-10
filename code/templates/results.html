@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block main %}
+    <p>
+        Complete the survey to see your updated list!
+    </p>
+    <p>
+        Your list of recommendations will appear below. The language at the top of the list is your best match and what we recommend that you learn next. The langauges toward the bottom are not great matches, based on our metrics.
+    </p>
+    {% for key, value in difference.items() %}
+        <div style="color:red">
+            {{ key }}
+        </div>
+    {% endfor %}
+{% endblock %}

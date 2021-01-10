@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Number
+{% endblock %}
+
+{% block main %}
+    <form action="/number" method="post">
+        <div class="form-group">
+            How many of the following foreign languages do you speak?
+        </div>
+        <div class="form-group" style="text-align: center">
+            <div style="display: inline-block; text-align: left">
+                🇪🇸 Spanish
+                <br>🇨🇳 Chinese
+                <br>🇵🇭 Tagalog
+                <br>🇻🇳 Vietnamese
+                <br>🇪🇬 Arabic
+                <br>🇫🇷 French
+                <br>🇰🇷 Korean
+                <br>🇷🇺 Russian
+                <br>🇩🇪 German
+                <br>🇭🇹 Haitian Creole
+                <br>🇮🇳 Hindi
+                <br>🇧🇷 Portuguese
+                <br>🇮🇹 Italian
+                <br>🇵🇱 Polish
+                <br>🇯🇵 Japanese
+                <br>🇮🇷 Persian
+                <br>🇮🇳 Gujarati
+                <br>🇮🇳 Telugu
+                <br>🇧🇩 Bengali
+                <br>🇵🇰 Urdu
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" input autocomplete="off" autofocus class="form-control" name="number_of_languages" placeholder="Number" max="20" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}

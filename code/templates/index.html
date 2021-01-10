@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <p>
+        Hello language lover! This website is designed to help you decide which language to learn next. It takes into account not only your responses to a detailed survey but also your previously learned languages
+        to generate a list of languages in order of how well suited it is to you and your experience. We consider ten scales to determine your perfect next step.
+    </p>
+    <p>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">CONSERVATIVE</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">LIBERAL</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">EASY</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">DIFFICULT</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">SIMILAR</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">DIFFERENT</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">LATIN</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">LOGOGRAPHIC</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">NICHE US</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">POPULAR US</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">NICHE WORLD</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">POPULAR WORLD</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">INFLECTIONAL</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">ANALYTICAL</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">ASSIMILATE</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">SHOCKING</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">HOMOGENEOUS</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">DIVERSE</div>
+        </div>
+        <div class="flex-row">
+            <div class="text-right" style="color: red">EXPRESSIVE</div>
+            <span>↔</span>
+            <div class="text-left" style="color: blue">EFFICIENT</div>
+        </div>
+    </p>
+    <p>
+        Are you ready? Click on button below to being the survey!
+    </p>
+    <form action="/number" method="get">
+        <button class="btn btn-primary" type="submit">Begin</button>
+    </form>
+{% endblock %}

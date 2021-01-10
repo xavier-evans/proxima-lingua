@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Diverse
+{% endblock %}
+
+{% block main %}
+<progress value="80" max="100" style="height:24px; width:20%"> 80% </progress>
+<pre>
+</pre>
+<form action="/diverse" method="post">
+    <div class="form-group">
+        Indicate the extent to which you agree or disagree with the following statements.
+    </div>
+    <pre>
+    </pre>
+    <div class="form-group" style="font-size:small; color:red">
+        I expect the speakers of my next language to come from many different countries and descend from many different heritages.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio1" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio1" value=2 /></label></td>
+                <td><label><input type="radio" name="radio1" value=4 /></label></td>
+                <td><label><input type="radio" name="radio1" value=6 /></label></td>
+                <td><label><input type="radio" name="radio1" value=8 /></label></td>
+                <td><label><input type="radio" name="radio1" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        It would be easier for the speakers of my next language to come from one centralized geographic location so that I could immerse myself in their culture.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio2" value=10 required /></label></td>
+                <td><label><input type="radio" name="radio2" value=8 /></label></td>
+                <td><label><input type="radio" name="radio2" value=6 /></label></td>
+                <td><label><input type="radio" name="radio2" value=4 /></label></td>
+                <td><label><input type="radio" name="radio2" value=2 /></label></td>
+                <td><label><input type="radio" name="radio2" value=0 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        Diversity is essential, and I would love to see how different groups with different life experiences interact with their languages differently.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio3" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio3" value=2 /></label></td>
+                <td><label><input type="radio" name="radio3" value=4 /></label></td>
+                <td><label><input type="radio" name="radio3" value=6 /></label></td>
+                <td><label><input type="radio" name="radio3" value=8 /></label></td>
+                <td><label><input type="radio" name="radio3" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        I am more comfortable interacting with people who look like me.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio4" value=10 required /></label></td>
+                <td><label><input type="radio" name="radio4" value=8 /></label></td>
+                <td><label><input type="radio" name="radio4" value=6 /></label></td>
+                <td><label><input type="radio" name="radio4" value=4 /></label></td>
+                <td><label><input type="radio" name="radio4" value=2 /></label></td>
+                <td><label><input type="radio" name="radio4" value=0 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+         Diverse perspectives allow us to solve diverse problems.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio5" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio5" value=2 /></label></td>
+                <td><label><input type="radio" name="radio5" value=4 /></label></td>
+                <td><label><input type="radio" name="radio5" value=6 /></label></td>
+                <td><label><input type="radio" name="radio5" value=8 /></label></td>
+                <td><label><input type="radio" name="radio5" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <button class="btn btn-primary" type="submit">Next</button>
+</form>
+{% endblock %}

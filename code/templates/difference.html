@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Difference
+{% endblock %}
+
+{% block main %}
+<progress value="20" max="100" style="height:24px; width:20%"> 20% </progress>
+<pre>
+</pre>
+<form action="/difference" method="post">
+    <div class="form-group">
+        Indicate the extent to which you agree or disagree with the following statements.
+    </div>
+    <pre>
+    </pre>
+    <div class="form-group" style="font-size:small; color:red">
+        I want to learn a language that is unlike anything I have learned before.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio1" value=3 required /></label></td>
+                <td><label><input type="radio" name="radio1" value=4 /></label></td>
+                <td><label><input type="radio" name="radio1" value=5 /></label></td>
+                <td><label><input type="radio" name="radio1" value=6 /></label></td>
+                <td><label><input type="radio" name="radio1" value=7 /></label></td>
+                <td><label><input type="radio" name="radio1" value=8 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        The most rewarding part of the language-learning process is seeing cross-linguistic vocabulary and grammar connections. It gives interesting historical linguistic insights.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio2" value=8 required /></label></td>
+                <td><label><input type="radio" name="radio2" value=7 /></label></td>
+                <td><label><input type="radio" name="radio2" value=6 /></label></td>
+                <td><label><input type="radio" name="radio2" value=5 /></label></td>
+                <td><label><input type="radio" name="radio2" value=4 /></label></td>
+                <td><label><input type="radio" name="radio2" value=3 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        It would be a waste to learn a language that is particularly different from others I have learned when cognates would speed up the process of learning a sister language so dramatically.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio4" value=8 required /></label></td>
+                <td><label><input type="radio" name="radio4" value=7 /></label></td>
+                <td><label><input type="radio" name="radio4" value=6 /></label></td>
+                <td><label><input type="radio" name="radio4" value=5 /></label></td>
+                <td><label><input type="radio" name="radio4" value=4 /></label></td>
+                <td><label><input type="radio" name="radio4" value=3 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        I do not mind learning a language from a completely different family that shares no common vocabulary with other languages I have learned.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio3" value=3 required /></label></td>
+                <td><label><input type="radio" name="radio3" value=4 /></label></td>
+                <td><label><input type="radio" name="radio3" value=5 /></label></td>
+                <td><label><input type="radio" name="radio3" value=6 /></label></td>
+                <td><label><input type="radio" name="radio3" value=7 /></label></td>
+                <td><label><input type="radio" name="radio3" value=8 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+         I want to learn diverse languages from different parts of the world to get a broader sense of the varied forms languages can take on.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio5" value=3 required /></label></td>
+                <td><label><input type="radio" name="radio5" value=4 /></label></td>
+                <td><label><input type="radio" name="radio5" value=5 /></label></td>
+                <td><label><input type="radio" name="radio5" value=6 /></label></td>
+                <td><label><input type="radio" name="radio5" value=7 /></label></td>
+                <td><label><input type="radio" name="radio5" value=8 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <button class="btn btn-primary" type="submit">Next</button>
+</form>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Insert
+{% endblock %}
+
+{% block main %}
+    <div>
+        Select the foreign language or languages you already speak in descending order of proficiency.
+    </div>
+    <div style="font-size:x-small;font-style:italic">
+        For example, if you speak Spanish at an advanced level, a Chinese language at an intermediate level, and Portuguese at a beginner level, you should select them in the order Spanish, Chinese, and finally Portuguese.
+    </div>
+    <pre>
+    </pre>
+    <form action="/insert" method="post">
+        {% for i in range(number) %}
+        <div class="form-group">
+            <select autocomplete="off" autofocus class="form-control" name="language{{ i }}" type="text" required>
+                <option value="" selected disabled hidden>Choose Language</option>
+                <option value="spanish">🇪🇸 Spanish</option>
+                <option value="chinese">🇨🇳 Chinese</option>
+                <option value="tagalog">🇵🇭 Tagalog</option>
+                <option value="vietnamese">🇻🇳 Vietnamese</option>
+                <option value="arabic">🇪🇬 Arabic</option>
+                <option value="french">🇫🇷 French</option>
+                <option value="korean">🇰🇷 Korean</option>
+                <option value="russian">🇷🇺 Russian</option>
+                <option value="german">🇩🇪 German</option>
+                <option value="haitian">🇭🇹 Haitian Creole</option>
+                <option value="hindi">🇮🇳 Hindi</option>
+                <option value="portuguese">🇧🇷 Portuguese</option>
+                <option value="italian">🇮🇹 Italian</option>
+                <option value="polish">🇵🇱 Polish</option>
+                <option value="japanese">🇯🇵 Japanese</option>
+                <option value="persian">🇮🇷 Persian</option>
+                <option value="gujarati">🇮🇳 Gujarati</option>
+                <option value="telugu">🇮🇳 Telugu</option>
+                <option value="bengali">🇧🇩 Bengali</option>
+                <option value="urdu">🇵🇰 Urdu</option>
+            </select>
+        </div>
+        {% endfor %}
+        <button class="btn btn-primary" type="submit">Begin</button>
+    </form>
+{% endblock %}

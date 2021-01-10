@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Difficult
+{% endblock %}
+
+{% block main %}
+<progress value="10" max="100" style="height:24px; width:20%"> 10% </progress>
+<pre>
+</pre>
+<form action="/difficult" method="post">
+    <div class="form-group">
+        Indicate the extent to which you agree or disagree with the following statements.
+    </div>
+    <pre>
+    </pre>
+    <div class="form-group" style="font-size:small; color:red">
+        I am prepared to spend whatever time necessary to learn even the most challenging language.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio1" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio1" value=2 /></label></td>
+                <td><label><input type="radio" name="radio1" value=4 /></label></td>
+                <td><label><input type="radio" name="radio1" value=6 /></label></td>
+                <td><label><input type="radio" name="radio1" value=8 /></label></td>
+                <td><label><input type="radio" name="radio1" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        If I were given the option to learn either a simple, relevant language or a difficult, niche language, I would choose the latter to impress others.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio3" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio3" value=2 /></label></td>
+                <td><label><input type="radio" name="radio3" value=4 /></label></td>
+                <td><label><input type="radio" name="radio3" value=6 /></label></td>
+                <td><label><input type="radio" name="radio3" value=8 /></label></td>
+                <td><label><input type="radio" name="radio3" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        Learning a language can get monotonous after many years, thus I intend to spend as short a time as possible learning my next language to fluency.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio4" value=10 required /></label></td>
+                <td><label><input type="radio" name="radio4" value=8 /></label></td>
+                <td><label><input type="radio" name="radio4" value=6 /></label></td>
+                <td><label><input type="radio" name="radio4" value=4 /></label></td>
+                <td><label><input type="radio" name="radio4" value=2 /></label></td>
+                <td><label><input type="radio" name="radio4" value=0 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+         Great challenges do not intimidate me—they motivate me to work harder.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio5" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio5" value=2 /></label></td>
+                <td><label><input type="radio" name="radio5" value=4 /></label></td>
+                <td><label><input type="radio" name="radio5" value=6 /></label></td>
+                <td><label><input type="radio" name="radio5" value=8 /></label></td>
+                <td><label><input type="radio" name="radio5" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        I tend to take the easy way out, especially in the name of practicality.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio2" value=10 required /></label></td>
+                <td><label><input type="radio" name="radio2" value=8 /></label></td>
+                <td><label><input type="radio" name="radio2" value=6 /></label></td>
+                <td><label><input type="radio" name="radio2" value=4 /></label></td>
+                <td><label><input type="radio" name="radio2" value=2 /></label></td>
+                <td><label><input type="radio" name="radio2" value=0 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <button class="btn btn-primary" type="submit">Next</button>
+</form>
+{% endblock %}

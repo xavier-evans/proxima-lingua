@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Conservative
+{% endblock %}
+
+{% block main %}
+<progress value="0" max="100" style="height:24px; width:20%"> 0% </progress>
+<pre>
+</pre>
+<form action="/conservative" method="post">
+    <div class="form-group">
+        Indicate the extent to which you agree or disagree with the following statements.
+    </div>
+    <pre>
+    </pre>
+    <div class="form-group" style="font-size:small; color:red">
+        Governments should crack down on illegal immigration, and those who enter illegally should not be granted rights comparable to those of legal citizens.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio1" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio1" value=2 /></label></td>
+                <td><label><input type="radio" name="radio1" value=4 /></label></td>
+                <td><label><input type="radio" name="radio1" value=6 /></label></td>
+                <td><label><input type="radio" name="radio1" value=8 /></label></td>
+                <td><label><input type="radio" name="radio1" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        All references to God and religion in general should be removed from public spaces.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio2" value=10 required /></label></td>
+                <td><label><input type="radio" name="radio2" value=8 /></label></td>
+                <td><label><input type="radio" name="radio2" value=6 /></label></td>
+                <td><label><input type="radio" name="radio2" value=4 /></label></td>
+                <td><label><input type="radio" name="radio2" value=2 /></label></td>
+                <td><label><input type="radio" name="radio2" value=0 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        Free healthcare provided by the government means that everyone will get the same poor-quality healthcare.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio3" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio3" value=2 /></label></td>
+                <td><label><input type="radio" name="radio3" value=4 /></label></td>
+                <td><label><input type="radio" name="radio3" value=6 /></label></td>
+                <td><label><input type="radio" name="radio3" value=8 /></label></td>
+                <td><label><input type="radio" name="radio3" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+        Marriage should be legal for gay, lesbian, bisexual and transgender couples to ensure equal rights for all.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio4" value=10 required /></label></td>
+                <td><label><input type="radio" name="radio4" value=8 /></label></td>
+                <td><label><input type="radio" name="radio4" value=6 /></label></td>
+                <td><label><input type="radio" name="radio4" value=4 /></label></td>
+                <td><label><input type="radio" name="radio4" value=2 /></label></td>
+                <td><label><input type="radio" name="radio4" value=0 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group" style="font-size:small; color:red">
+         It is far more compassionate and effective to encourage a person to become self-reliant rather than keep them dependent on the government for money.
+    </div>
+    <div>
+        <table style="margin-left:auto; margin-right:auto" class="form-group">
+            <tr>
+                <td><label>Strongly Disagree  <input type="radio" name="radio5" value=0 required /></label></td>
+                <td><label><input type="radio" name="radio5" value=2 /></label></td>
+                <td><label><input type="radio" name="radio5" value=4 /></label></td>
+                <td><label><input type="radio" name="radio5" value=6 /></label></td>
+                <td><label><input type="radio" name="radio5" value=8 /></label></td>
+                <td><label><input type="radio" name="radio5" value=10 />  Strongly Agree</label></td>
+            </tr>
+        </table>
+    </div>
+    <button class="btn btn-primary" type="submit">Next</button>
+</form>
+{% endblock %}

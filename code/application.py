@@ -37,7 +37,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///proximalingua.db")
+db = SQL(os.getenv("postgres://tvanolilkbnhcg:857d51887b0470d3c04192f4ebef5a34203b4979a59138364fcf31e0eefeb0d0@ec2-54-242-120-138.compute-1.amazonaws.com:5432/d6vqig3us6v4qn"))
 
 
 survey_conservative = 0
